@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <title>Phone Number Formater</title>
+ </head>
+<body>
+      <h1>Phone No Formater</h1>
+      <input type="chars" size="15"  id="chars" placeholder="" maxlength="14">
+      <p>07064219422</p>
+   <script>
+        const inputField=document.querySelector('input');
+         inputField.addEventListener("keydown", (e) => {
+          if(e.key === "Backspace"){
+             
+         }
+         if(inputField.value.length ==4)
+         inputField.value = inputField.value +" ";
+         if(inputField.value.length ==8)
+         inputField.value = inputField.value +" ";
+         if(inputField.value.length ==13)
+        inputField.value = inputField.value +" ";
+       });
+      // const inputField=document.querySelector('input')
+        inputField.addEventListener("keyup", (e) => {
+         if(e.key === "Delete"){
+        
+         }
+         if(inputField.value.length ==5)
+         inputField.value = inputField.value +" ";
+         if(inputField.value.length==8)
+         inputField.value = inputField.value +" ";
+         e.preventDefault();
+         
+       });
+    </script>
+</body>
+
+       
